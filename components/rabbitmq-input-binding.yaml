@@ -1,0 +1,17 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: api/RabbitBinding
+spec:
+  type: bindings.rabbitmq
+  version: v1
+  metadata:
+  - name: queueName
+    value: queue-for-input-binding
+  - name: host
+    secretKeyRef:
+      name: RabbitMQConnectStr
+      key: RabbitMQConnectStr
+auth:
+  secretStore: secrets01
+

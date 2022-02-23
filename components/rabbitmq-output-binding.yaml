@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: api/RabbitBinding/output
+spec:
+  type: bindings.rabbitmq
+  version: v1
+  metadata:
+  - name: queueName
+    value: queue-for-output-binding
+  - name: host
+    value: amqp://admin:admin@192.168.84.1:5672
+
