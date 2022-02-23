@@ -9,6 +9,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontEnd", "FrontEnd\FrontE
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6314EA13-FC1D-4178-B82E-C58C0969D6DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "yaml-doc", "yaml-doc", "{23CDEB21-1571-41C9-9F91-B99305960D85}"
+	ProjectSection(SolutionItems) = preProject
+		..\components\pubsub-rabbitmq.yaml = ..\components\pubsub-rabbitmq.yaml
+		..\components\pubsub.yaml = ..\components\pubsub.yaml
+		..\components\pubsub6379.yaml = ..\components\pubsub6379.yaml
+		..\components\rabbitmq-cron-binding.yaml = ..\components\rabbitmq-cron-binding.yaml
+		..\components\rabbitmq-input-binding.yaml = ..\components\rabbitmq-input-binding.yaml
+		..\components\rabbitmq-output-binding.yaml = ..\components\rabbitmq-output-binding.yaml
+		..\components\secrets01.yaml = ..\components\secrets01.yaml
+		..\components\statestore-mysql.yaml = ..\components\statestore-mysql.yaml
+		..\components\statestore.yaml = ..\components\statestore.yaml
+		..\components\Subscription.yaml = ..\components\Subscription.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
